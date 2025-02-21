@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-xlight flex gap-2" >
+    <div  class=" bg-white w-1/5 p-6 flex flex-col justify-between" class="sideBar">
+        <div class="upper_sidebar flex flex-col gap-4">
+            <img src="./assets/Union.svg" alt="" class="w-44 h-8"/>
+            <div class="border border-gray-light rounded-md flex justify-between px-3 py-3 items-center" class="user_profile">
+                <div class="flex items-center gap-2 w-3/4" class="logo_and_name">
+                    <img src="./assets/Group 79.svg" alt="" class="w-10 h-10"/>
+                    <div class="name_and_des">
+                        <p class="font-semibold text-base text-gray-dark w-40 font-spline">Jessica Thompson</p>
+                        <p class="text-xs font-normal text-gray-medium font-spline">Primary User</p>
+                    </div>
+                </div>
+                <img src="assets/Shape.svg" alt=""/>
+            </div>
+            <div class="flex flex-col text-gray-medium font-spline font-normal" class="navigations">
+                <a class="flex gap-2 py-4 px-2.5 cursor-pointer">
+                    <img src="assets/home 1.svg" alt="" class="h-6 w-6"/>
+                    <p class="font-normal text-base">Home</p>
+                </a>
+                <a class="flex gap-2 py-4 px-2.5 bg-green rounded-md ">
+                    <img src="assets/file-text 1.svg" alt="" class="h-6 w-6"/>
+                    <p class="font-medium text-base text-gray-medium">Documents</p>
+                </a>
+                <a class="flex gap-2 py-4 px-2.5 cursor-pointer">
+                    <img src="assets/message-circle 1.svg" alt="" class="h-6 w-6"/>
+                    <p class="font-normal text-base">Chat with Neptune</p>
+                </a>
+                <a class="flex gap-2 py-4 px-2.5 cursor-pointer">
+                    <img src="assets/help-circle 1.svg" alt="" class="h-6 w-6"/>
+                    <p class="font-normal text-base">Help</p>
+                </a>
+                <a class="flex gap-2 py-4 px-2.5 cursor-pointer">
+                    <img src="assets/settings 1.svg" alt="" class="h-6 w-6"/>
+                    <p class="font-normal text-base">Settings</p>
+                </a>
+            </div>
+        </div>
+        <div class="flex flex-col gap-4" class="lower_sidebar">
+            <img src="assets/phone 1.svg" alt="" class="h-8 w-8"/>
+            <div class="font-spline">
+                <p class="font-medium text-2xl">Having Trouble?</p>
+                <p class="font-normal text-sm">Feel free to contact us and we will always help you through the process.</p>
+            </div>
+            <button class="bg-primary text-white rounded-md h-max p-2 px-4 w-fit font-spline text-sm">Contact Us</button>
+        </div>
+    </div>
+    <div class="h-screen w-4/5 px-14 py-6 flex flex-col gap-8" class="mainContent">
+        <div class="flex justify-between items-center w-44 font-inter font-normal">
+            <p class="text-primary">Home</p>
+            <img src="assets/chevron-right.svg" alt="" />
+            <p class="text-gray-light">Documents</p>
+        </div>
+        <div class="flex justify-between">
+            <p class="font-semibold text-4xl font-zin">My Documents</p>
+            <div class="w-72 h-11 px-6 rounded-md font-normal bg-white text-base border border-gray-light text-gray-xlight flex justify-between">
+                <input type="text" placeholder="Search Documents.." class=" ">
+                <img src="assets/Layer_1.svg" alt="" class="w-4"/>
+            </div>
+        </div>
+        <main >
+            <div class="bg-white rounded-lg shadow">
+              <table class="min-w-full">
+                <thead>
+                  <tr class="border-b border-gray-xlight">
+                    <th class="px-6 py-3 text-left">
+                      <input type="checkbox" class="rounded border-gray-xlight" />
+                    </th>
+                    <th class="px-6 py-3 text-left text-sm text-gray-dark font-semibold font-spline">Document Name</th>
+                    <th class="px-6 py-3 text-left text-sm text-gray-dark font-semibold font-spline">Status</th>
+                    <th class="px-6 py-3 text-left text-sm text-gray-dark font-semibold font-spline">Last Modified</th>
+                    <th class="px-6 py-3"></th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-xlight">
+                    <tr>
+                        <td class="px-6 py-4">
+                            <input type="checkbox" class="rounded border-gray-xlight" />
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-base text-primary font-spline">Title of Document Goes Here</div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-primary text-white font-inter">
+                                Needs Signing
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-secondary font-inter">10/22/2024 <br> 2:01 pm</td>
+                        <td class="px-6 py-4 text-right flex justify-between">
+                            <button class="items-center w-36 h-9 border border-gray-light text-sm rounded-md">
+                                Sign now
+                            </button>
+                            <img src="assets/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.svg" alt="" class="cursor-pointer"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">
+                            <input type="checkbox" class="rounded border-gray-xlight" />
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-base text-primary font-spline">Title of Document Goes Here</div>
+                        </td>
+                        <td class="px-6 py-4 flex flex-col">
+                            <span class="w-fit items-center px-4 py-1 rounded-full text-sm font-medium bg-gray-xlight text-gray-medium font-inter">
+                                Pending
+                            </span>
+                            <i><p class="text-gray-light font-inter font-medium text-sm">Waiting for <span class="text-primary font-inter font-medium text-sm">1 Person</span></p></i>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-secondary font-inter">10/22/2024 <br> 2:01 pm</td>
+                        <td class="px-6 py-4 text-right flex justify-between">
+                            <button class="items-center w-36 h-9 border border-gray-light text-sm rounded-md">
+                                Preview
+                            </button>
+                            <img src="assets/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.svg" alt="" class="cursor-pointer"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">
+                            <input type="checkbox" class="rounded border-gray-xlight" />
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-base text-primary font-spline">Title of Document Goes Here</div>
+                        </td>
+                        <td class="px-6 py-4 flex flex-col">
+                            <span class="w-fit items-center px-4 py-1 rounded-full text-sm font-medium bg-gray-xlight text-gray-medium font-inter">
+                                Pending
+                            </span>
+                            <i><p class="text-gray-light font-inter font-medium text-sm">Waiting for <span class="text-primary font-inter font-medium text-sm">1 Person</span></p></i>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-secondary font-inter">10/22/2024 <br> 2:01 pm</td>
+                        <td class="px-6 py-4 text-right flex justify-between">
+                            <button class="items-center w-36 h-9 border border-gray-light text-sm rounded-md">
+                                Preview
+                            </button>
+                            <img src="assets/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.svg" alt="" class="cursor-pointer"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">
+                            <input type="checkbox" class="rounded border-gray-xlight" />
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-base text-primary font-spline">Title of Document Goes Here</div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-green text-primary font-inter">
+                                Completed
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-secondary font-inter">10/22/2024 <br> 2:01 pm</td>
+                        <td class="px-6 py-4 text-right flex justify-between">
+                            <button class="items-center w-36 h-9 border border-gray-light text-sm rounded-md">
+                                Download PDF
+                            </button>
+                            <img src="assets/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.svg" alt="" class="cursor-pointer"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="px-6 py-4">
+                            <input type="checkbox" class="rounded border-gray-xlight" />
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="text-base text-primary font-spline">Title of Document Goes Here</div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="inline-flex items-center px-4 py-1 rounded-full text-sm font-medium bg-green text-primary font-inter">
+                                Completed
+                            </span>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-secondary font-inter">10/22/2024 <br> 2:01 pm</td>
+                        <td class="px-6 py-4 text-right flex justify-between">
+                            <button class="items-center w-36 h-9 border border-gray-light text-sm rounded-md">
+                                Download PDF
+                            </button>
+                            <img src="assets/more_vert_24dp_5F6368_FILL0_wght400_GRAD0_opsz24 2.svg" alt="" class="cursor-pointer"/>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+              </table>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
